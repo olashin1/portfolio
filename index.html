@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body id="home-section">
+  <div class="nav-row">
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a class="home-hyperlink" href="#home-section">Home</a></li>
+        <li><a class="about-hyperlink" href="#about-me-section">About Me</a></li>
+        <li><a class="projects-hyperlink" href="#projects-section">Projects</a></li>
+        <li><a class="contact-hyperlink" href="#contact-section">Contact Me</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Header -->
+  <div class="header-div">
+    <div class="name-row">
+      <p class="name">
+        Omar Lashin
+      </p>  
+    </div>
+    
+    <div class="button-div">
+      <button class="light-mode-button" id="toggle-button">
+        Enable Dark Mode
+      </button>
+    </div>
+  </div>
+
+  <!-- About Me -->
+  <div id="about-me-section" class="about-me-div">
+    <div class="abt-me-text-div">
+      <p class="about-me">
+        <strong>About Me:</strong> </br>
+        Hey, how's it going. I am a Computer Science major at Saddleback College.
+        In my free time, I like customizing mechanical keyboards and playing games.
+        My goal is to transfer to a UC and continue my education in CS
+        and afterwards to become a fullstack developer in the future.
+      </p>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <div id="projects-section" class="projects-div">
+    <div class="project-title-row">
+      Projects
+    </div>
+    <div class="project-details-row">
+      <div class="project-image-column">
+        <img class="project-image" src="images/prisonors-dilemma-image.png" alt="">
+      </div>
+      <div class="project-desc-column">
+        <p class="project-desc">
+          This project implements a classic problem in game theory, 
+          the Prisonor's Dilemma, into a simulation that can be played. 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact-section" class="contact-me-row">
+    <div class="contact-me-area">
+      <!-- 
+    This is a working contact form. To receive email, 
+    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+
+    Create Access Key here 👉 https://web3forms.com/
+ -->
+
+      <section class="contact-section">
+        <div class="contact-intro">
+          <h2 class="contact-title">Get in Touch</h2>
+          <p class="contact-description">
+            Fill out the form below and we'll get back to you as soon as possible.
+          </p>
+        </div>
+
+        <!-- Web3 Code -->
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="6acf8aa8-409a-4f58-a578-3fa97d0c8a61" />
+          <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+          <input type="hidden" name="from_name" value="My Website" />
+          <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+          <div class="form-group-container">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone</label>
+              <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+            </div>
+          </div>
+          <button class="form-submit" type="submit">Send Message</button>
+        </form>
+      </section>
+      <!-- End of Web3 Code -->
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="footer-section">
+    <footer>
+      <ul>
+        <li><a class="github-hyperlink" href="https://github.com/olashin1" target="_blank">Github</a></li>
+        <li><a class="contact-hyperlink" href="#contact-section">Contact Me</a></li>
+        <li><a class="about-hyperlink" href="#about-me-section">Who Am I</a></li>
+      </ul>
+    </footer>
+  </div>
+
+</body>
+<script src="index.js"></script>
+</html>
